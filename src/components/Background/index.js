@@ -1,16 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import SongList from './SongList.js';
+import Player from '../Player';
 import './Background.css';
 
-class Background extends Component {
+class Background extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             currentSong: 0,
         };
     }
-    handleChangeSong = (song) => () => {
+    handleChangeSong = (song) => {
+        console.log('handleChangeSong');
         this.setState({ currentSong: song});
     };
     render() {
@@ -19,9 +21,13 @@ class Background extends Component {
               <div>
                   current song is: {SongList[this.state.currentSong].songName}
               </div>
-              <button onClick={this.handleChangeSong(2)}>
+              {/* <button onClick={this.handleChangeSong(2)}>
                   click
-              </button>
+              </button> */}
+              <Player
+                currentSong={this.state.currentSong}
+                changeSong={this.handleChangeSong}
+              />
           </div>
         );
     }
