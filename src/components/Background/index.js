@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SongList from './SongList.js';
+import SongList from '../SongList';
 import Player from '../Player';
 import './Background.css';
 

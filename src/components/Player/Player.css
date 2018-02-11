@@ -1,0 +1,77 @@
+button {
+  background: none;
+  border: none;
+  outline: 0;
+}
+.progress {
+	transform: rotate(-90deg);
+}
+.player-wrap {
+  position: relative;
+  width: 400px;
+  margin: auto auto;
+}
+.text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+}
+
+.progress__meter,
+.progress__value {
+	fill: none;
+}
+
+.progress__meter {
+	stroke: white;
+}
+
+.progress__value {
+	stroke: white;
+	stroke-linecap: round;
+}
+.player-icon {
+  width: 50px;
+  height: 50px;
+}
+.buttons {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.player-icon {
+  filter: invert(1);
+  transition: 0.3s filter;
+}
+.player-icon:hover {
+  filter: invert(0);
+}
+.icon-prev {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.icon-next {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+}
+.icon-play {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-list {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
