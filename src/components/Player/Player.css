@@ -7,6 +7,16 @@ button {
 	transform: rotate(-90deg);
 }
 .player-wrap {
+  overflow: hidden;
+  transition: 0.5s all;
+  opacity: 1;
+  height: 500px;
+}
+.player-wrapp--hide {
+  opacity: 0;
+  height: 0;
+}
+.player {
   position: relative;
   width: 400px;
   margin: auto auto;
@@ -74,4 +84,7 @@ button {
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
+}
+h1 {
+  font-size: 50px;
 }

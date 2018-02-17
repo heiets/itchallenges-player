@@ -1,0 +1,23 @@
+.playlist-wrap {
+    width: 400px;
+    margin: auto auto;
+    transition: 0.5s all;
+    opacity: 1;
+}
+.playlist-wrapp--hide {
+  opacity: 0;
+}
+.icon-close-list {
+    display: block;
+    margin: 0 auto;
+}
+.list-item {
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+}
+.separator {
+    height: 2px;
+    background-color: white;
+}
