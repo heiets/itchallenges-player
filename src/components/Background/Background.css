@@ -4,6 +4,7 @@ body {
 .Background {
   height: 90vh;
   padding-top: 200px;
+  background-size: cover;
 }
 h4, h5 {
   margin: 0;
